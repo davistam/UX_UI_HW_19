@@ -1,0 +1,237 @@
+
+nav {
+    width: 100%;
+    padding:1%;
+    background-color: lightseagreen;
+}
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.logo{
+    width: 23%;
+    padding:1%;
+    text-align: center;  
+    float: left; 
+}
+
+.heroimg{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    padding: 25px;
+}
+
+.hi{ 
+    float: left;
+    width: 20%;
+    height: 95%;
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.hi img{
+    padding: 5px;
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.hit {
+    float: left;
+    width: 69%;
+    margin: 133px auto 133px 5px;
+    padding: 5px;
+    height: auto;
+    text-align: left;
+
+
+}
+
+ul{ 
+    width: 50%;
+    margin-left: auto;
+    padding: 10px;
+}
+
+li{
+    display: inline-block;
+    padding: 5px;
+    color:white;
+}
+
+
+
+.content{ 
+    padding: auto;
+ 
+}
+
+footer{ 
+    background-color: #373738;
+    text-align: center;
+}
+
+ul#foot{ 
+    display: inline-block;
+    vertical-align: top;
+}
+
+button {
+    display: block;
+    margin: 15px 15px 15px 15px;
+}
+
+h1.muxs{
+    text-align: center;
+    color: lightseagreen;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 0px auto;
+    height: 0px auto;
+    padding: 20px 20px 20px 20px;
+}
+
+div.fcms {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: fit-content;
+    width: 33%;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    border: 5px solid lightseagreen;
+    background-color: lightblue;
+
+}
+
+.msi { 
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    width: 100px;
+    height: 100px;  
+}
+
+h3{
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+.fcms p{
+    margin: 5px 5px 5px 5px;
+}
+
+h1.mw{
+    text-align: center;
+}
+
+#workGrid{;
+    margin: 5% 5%;
+    display: grid;
+    grid-template-rows:  45% 45% 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "mwimg1 mw1 ."
+    ". mw2 mwimg2"
+    ". vap ."
+    ;
+    background-color: black;
+    border: 5px solid lightseagreen;
+    
+}
+
+#mwimg1{ 
+    grid-area: mwimg1;
+
+   
+}
+
+#mw1{
+    grid-area: mw1;
+    color: white;
+    padding: 10px;
+}
+
+#mwimg2{
+    grid-area: mwimg2
+}
+
+#mw2{
+    grid-area: mw2;
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+#vap{ 
+    grid-area: vap;
+    display: inline;
+    text-align: center;
+    color: white;
+}
+
+
+.workGridArea {
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+      display: none;
+    }
+  
+  @media only screen and (max-width: 600px) {
+    nav {
+      position: static;
+      margin: 20px;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+    .heroimg {
+        display: flex;
+        flex-direction: column;
+        width:auto 0px;
+        height:fit-content;
+
+    }
+    .hi{
+        width: 100%;
+        min-height: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    div.fcms{
+        width: 100%;
+    }
+
+    #workGrid {
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "mwimg1"
+        "mw1"
+        "mwimg2"
+        "mw2"
+        "vap"
+      ;
+    }
+  }
+
